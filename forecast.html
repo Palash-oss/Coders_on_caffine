@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Prediction</title>
+    <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="mystyles.css">
+    </head>
+    <body>
+        
+        <nav class="navbar">
+            <div class="navbar-container container">
+                <div class="weather-icon">
+                    <img src="images.svg/ClimateAI.jpeg" alt="Weather icon" width="100" height="100">
+                </div>
+                <div class="logo_word"> <h1 class="logo">Climate.AI</h1></div>
+                <div class="hamburger-lines">
+                    <span class="line line1"></span>
+                    <span class="line line2"></span>
+                    <span class="line line3"></span>
+                </div>
+                <ul class="menu-items">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Category</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">Testimonial</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div style="background-image: url('images.svg/Sunny-day.jpg'); height: cover; background-size: cover;">
+
+            <div class="weather-container">
+                <header class="header">
+                    <h1 class="title">Weather Forecast</h1>
+                    <div class="location">
+                        <input type="text" placeholder="Enter city" class="city-input">
+                        <button class="search-btn">Search</button>
+                    </div>
+                </header>
+        
+                <div class="weather-info">
+                    <div class="temperature">
+                        <h2 class="temp-value">30°C</h2>
+                        <p class="description">Sunny</p>
+                    </div>
+                    <div class="weather-icon">
+                        <img class="Sunny-img" src="images.svg/Sunny.png" alt="Weather Icon">
+                    </div>
+                </div>
+        
+                <div class="forecast">
+                    <div class="forecast-day">
+                        <p>Monday</p>
+                        <img class="Cloudy-img" src="images.svg/Cloudy.png" alt="Cloudy">
+                        <p>24°C</p>
+                    </div>
+                    <div class="forecast-day">
+                        <p>Tuesday</p>
+                        <img class="Rainy-img" src="images.svg/Rainy.png" alt="Rainy">
+                        <p>22°C</p>
+                    </div>
+                    <div class="forecast-day">
+                        <p>Wednesday</p>
+                        <img class="Stormy-img" src="images.svg/Stormy.png" alt="Storm">
+                        <p>20°C</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="cards" id="weather-cards"></div>
+                <div class="highlights">
+                    
+            
+                <div class="sixbox" style="
+                margin-top: 30px;
+                padding: 20px;
+                display:grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                column-gap: 20px;
+                row-gap: 40px;
+                border-radius: 25px;
+                ">
+                    <div class="gridbox" style="background-color: lightblue; border-radius: 25px; height: 100px; padding: 15px;">
+                        <div class="card2">
+                            <h4 class="card-heading">UV Index</h4>
+                            <div class="content">
+                                <p class="uv-index">0</p>
+                                <p class="uv-text">Low</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gridbox" style="background-color: lightpink; border-radius: 25px; height: 100px; padding: 15px;">
+                        <div class="card2">
+                            <h4 class="card-heading">Wind Status</h4>
+                            <div class="content">
+                                <p class="wind-speed">0</p>
+                                <p>km/h</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gridbox" style="background-color: lightblue; border-radius: 25px; height: 100px; padding: 15px;">
+                        <div class="card2">
+                            <h4 class="card-heading">Sunrise & Sunset</h4>
+                            <div class="content">
+                                <p class="sun-rise">6:00 AM</p>
+                                <p class="sun-set">6:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gridbox" style="background-color: lightpink; border-radius: 25px; height: 100px; padding: 15px;">
+                        <div class="card2">
+                            <h4 class="card-heading">Humidity</h4>
+                            <div class="content">
+                                <p class="humidity">60%</p>
+                                <p class="humidity-status">Normal</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gridbox" style="background-color: lightblue; border-radius: 25px; height: 100px; padding: 15px;">
+                        <div class="card2">
+                            <h4 class="card-heading">Visibility</h4>
+                            <div class="content">
+                                <p class="visibility">10 km</p>
+                                <p class="visibility-status">Good</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gridbox" style="background-color: lightpink; border-radius: 25px; height: 100px; padding: 15px;">
+                        <div class="card2">
+                            <h4 class="card-heading">Air Quality</h4>
+                            <div class="content">
+                                <p class="air-quality">50</p>
+                                <p class="air-quality-status">Good</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
